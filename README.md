@@ -10,11 +10,11 @@ The annotations were created manually by one of the authors in consultation with
 
 ### Contents
 The [annotations](./annotations) folder contains annotations for the 14 concert audios used in the paper. </br>
-The [codes](./codes) folder contains . </br>
+The [codes](./codes) folder contains scripts to use the trained models to obtain surface tempo multiple estimates on a test audio, as well as training scripts to reproduce the cross-validation results. </br>
 More details on the annotation format and running the codes can be found in the respective folders.
 
 ### Audio dataset
-The sources for all the audios used in the work are listed in the file [Dataset_sources.pdf](./Dataset_sources.pdf). Some are available on YouTube, while others are from the CompMusic Dunya <sup>[1](#fn1)</sup> collection and can be obtained through the Dunya API <sup>[2](#fn2)</sup> using the provided MusicBrainz IDs <sup>[3](#fn3)</sup>. </br>
+The sources for all the audios used in the work are listed in the file [Dataset_sources.pdf](.annotations/Dataset_sources.pdf). Some are available on YouTube, while others are from the CompMusic Dunya <sup>[1](#fn1)</sup> collection and can be obtained through the Dunya API <sup>[2](#fn2)</sup> using the provided MusicBrainz IDs <sup>[3](#fn3)</sup>. </br>
 
 ***
 
