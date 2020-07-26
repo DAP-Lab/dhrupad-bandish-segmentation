@@ -1,9 +1,9 @@
 ## Readme
 
 ### Usage
-* To obtain surface tempo multiple estimates on a test audio, run:
-```python3 get_stm.py /path/to/audio.wav <mode>```
-where 'mode' is one of 'net', 'voc', 'pakh', indicating the source for s.t.m. estimation. <br>
+* To obtain surface tempo multiple estimates on a test audio, run:<br>
+```python3 get_stm.py /path/to/audio.wav <mode>```<br>
+where <mode> is one of 'net', 'voc', 'pakh', indicating the source for s.t.m. estimation. <br>
 
 Use the 'net' mode if audio is a mixture signal, else use 'voc' or 'pakh' for clean/source-separated vocals or pakhawaj tracks.
 
