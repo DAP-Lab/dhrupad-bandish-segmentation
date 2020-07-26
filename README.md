@@ -1,7 +1,7 @@
 # Dhrupad Vocal Bandish Segmentation
 This repository contains annotations of surface tempo based segments of the *bandish* portions of a Dhrupad vocal concert dataset, and codes for automatic surface tempo estimation and structural segmentation. It is linked to the following publication: </br> </br>
 ```
-M A Rohit, Vinutha T P, Preeti Rao. “Structural Segmentation of Dhrupad Vocal Bandish Audio 
+Rohit M A, Vinutha T P, Preeti Rao. “Structural Segmentation of Dhrupad Vocal Bandish Audio 
 based on Tempo”, 21st International Society for Music Information Retrieval Conference,
 Montréal, Canada, 2020
 ```
