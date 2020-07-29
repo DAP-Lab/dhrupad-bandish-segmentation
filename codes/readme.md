@@ -5,7 +5,7 @@
 ```python3 get_stm.py /path/to/audio.wav <mode>``` </br>
 where ```<mode>``` is one of ```net```, ```voc```, ```pakh```, indicating the source for s.t.m. estimation. <br>
 
-Use the ```net``` mode if audio is a mixture signal, else use ```voc``` or ```pakh``` for clean/source-separated vocals or pakhawaj tracks.
+Use the ```net``` mode if audio is a mixture signal, else use ```voc``` or ```pakh``` for clean/source-separated vocals or pakhawaj tracks. The output is saved as a plot in ```./plots``` (output directory can be changed in ```params.py```).
 
 ### Contents
 * [get_stm.py](get_stm.py) - to predict s.t.m. values on a test audio
