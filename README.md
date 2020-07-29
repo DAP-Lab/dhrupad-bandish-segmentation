@@ -1,16 +1,25 @@
 # Dhrupad Vocal Bandish Segmentation
-This repository contains annotations of surface tempo based segments of the *bandish* portions of a Dhrupad vocal concert dataset, and codes for automatic surface tempo estimation and structural segmentation. It is linked to the following publication: </br> </br>
+This repository contains annotations of metric cycle (*tala*) boundaries and of surface tempo based structural segments of the *bandish* portions of a Dhrupad vocal concert dataset, and codes for automatic surface tempo multiple estimation and structural segmentation. The repository is linked to the following publications: </br> </br>
 ```
-Rohit M A, Vinutha T P, Preeti Rao. “Structural Segmentation of Dhrupad Vocal Bandish Audio 
+Rohit M. A., Vinutha T. P., Preeti Rao. “Structural Segmentation of Dhrupad Vocal Bandish Audio 
 based on Tempo”, 21st International Society for Music Information Retrieval Conference,
 Montréal, Canada, 2020
+```
+</br>
+```
+Rohit M A, Preeti Rao. “Structural Segmentation of Dhrupad Vocal Bandish Audio 
+based on Tempo”, Unpublished technical report, 2020
 ```
 
 The annotations were created manually by one of the authors in consultation with a musician. Trained models are made available to obtain predictions on any test audio. Training scripts are also provided to reproduce the results reported in the paper.
 
 ### Contents
-The [annotations](./annotations) folder contains annotations for the 14 concert audios used in the paper. </br>
-The [codes](./codes) folder contains scripts to use the trained models to obtain surface tempo multiple estimates on a test audio, as well as training scripts to reproduce the cross-validation results. </br>
+* [annotations](./annotations) - annotations for all the audios used in the paper </br>
+* [codes](./codes) - scripts to use the trained models to obtain surface tempo multiple estimates on a test audio, as well as to reproduce the cross-validation results </br>
+
+* [audio_samples](./audio_samples) - mixture and source separated audio clips corresponding to sections *(a)* and *(b)* of Figure 2 in the paper
+* [docs](./docs) - PDF files of the submitted paper and the technical report 
+
 More details on the annotation format and running the codes can be found in the respective folders.
 
 ### Audio dataset
