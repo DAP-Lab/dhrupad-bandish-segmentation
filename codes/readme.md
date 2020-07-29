@@ -7,6 +7,8 @@ where ```<mode>``` is one of ```net```, ```voc```, ```pakh```, indicating the so
 
 Use the ```net``` mode if audio is a mixture signal, else use ```voc``` or ```pakh``` for clean/source-separated vocals or pakhawaj tracks. The output is saved as a plot in ```./plots``` (output directory can be changed in ```params.py```).
 
+* See [train_readme.md](train_readme.md) for instructions on reproducing the cross-validation results reported in the paper.
+
 ### Contents
 * [get_stm.py](get_stm.py) - to predict s.t.m. values on a test audio
 * [model_utils.py](model_utils.py) - contains the data loader and model definition classes
@@ -16,4 +18,4 @@ Use the ```net``` mode if audio is a mixture signal, else use ```voc``` or ```pa
 * [train.py](train.py) - the main training script <br><br>
 
 * [splits/](splits/) - contains the list of sections in each cross-validation fold for all 3 cases(vocals, pakhawaj and net), in separate folders
-* [saved_models/](saved_models/) - trained models from each fold for all 3 cases in separate folders
+* [pretrained_models/](saved_models/) - trained models from each fold for all 3 cases in separate folders

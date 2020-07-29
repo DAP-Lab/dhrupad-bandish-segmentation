@@ -145,6 +145,7 @@ def makechunks(x,duration,hop):
                 y[i]=(y[i]-np.min(y[i]))/(np.max(y[i])-np.min(y[i]))
         return y
 
+#function to smooth predicted s.t.m. estimates by constraining minimum section duration
 def smooth_boundaries(stmvstime_track,min_dur):
 	stmvstime_track_smu=np.copy(stmvstime_track)
 	prev_stm=stmvstime_track_smu[0]

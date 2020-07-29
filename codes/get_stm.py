@@ -21,7 +21,7 @@ melgram_chunks=makechunks(melgram,input_len,input_hop)
 mode=sys.argv[2] #net / voc / pakh
 classes=classes_dict[mode]
 n_classes=len(classes)
-model_path=os.path.join(model_dir, mode, 'saved_model_fold_0.pt')
+model_path=os.path.join(pretrained_model_dir, mode, 'saved_model_fold_0.pt')
 model=build_model(input_height,input_len,n_classes).float().to(device)
 model.load_state_dict(torch.load(os.path.join(model_path),map_location=device))
 model.eval()

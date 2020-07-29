@@ -8,14 +8,46 @@ from params import *
 import numpy as np
 import matplotlib.pyplot as plt
 
+data_dir = sys.argv[1] #path to extracted features and labels
+mode = sys.argv[2] #'voc', 'pakh' or 'net'
+fold = int(sys.argv[3]) # 0, 1 or 2
+
+#generate cross-validation folds for training
+songlist=os.listdir(data_dir)
+labels_stm = np.load(os.path.join(data_dir,'labels_stm.npy'),allow_pickle=True).item()
+
+partition = {'train':[], 'validation':[]}
+n_folds=3
+all_folds=[]
+for i_fold in range(n_folds):
+	all_folds.append(np.loadtxt('./splits/%s/fold_%d.csv'%(mode,i_fold),delimiter=',',dtype='str'))
+
+val_fold=all_folds[fold]
+train_fold=np.array([])
+for i_fold in np.delete(np.arange(0,n_folds),fold):
+	if len(train_fold)==0: train_fold=all_folds[i_fold]
+	else: train_fold=np.append(train_fold,all_folds[i_fold])
+
+for song in songlist:
+	try:
+		ids = glob.glob(data_dir+song+'/*.pt')
+	except:
+		continue
+	section_name='_'.join(song.split('_')[0:4])
+
+	if section_name in val_fold:	partition['validation'].extend(ids)
+	elif section_name in train_fold:	partition['train'].extend(ids)
+
 ##generators
-training_set = Dataset(datadir, partition['train'], labels_stm)
+training_set = Dataset(data_dir, partition['train'], labels_stm)
 training_generator = data.DataLoader(training_set, **params)
 
-validation_set = Dataset(datadir, partition['validation'], labels_stm)
+validation_set = Dataset(data_dir, partition['validation'], labels_stm)
 validation_generator = data.DataLoader(validation_set, **params)
 
 #model definition and training
+classes=classes_dict[mode]
+n_classes=len(classes)
 model=build_model(input_height,input_len,n_classes).float().to(device)
 criterion=torch.nn.CrossEntropyLoss(reduction='mean')
 optimizer=torch.optim.Adam(model.parameters(), lr=0.0001)
@@ -30,6 +62,10 @@ print('No of trainable params: %d\n'%n_params)
 train_loss_epoch=[]; train_acc_epoch=[]
 val_loss_epoch=[]; val_acc_epoch=[]
 n_idle=0
+
+if not os.path.exists(os.path.join(model_dir,mode)): os.makedir(os.path.join(model_dir,mode))
+if not os.path.exists(os.path.join(plot_dir,mode)): os.makedir(os.path.join(plot_dir,mode))
+
 for epoch in range(max_epochs):
 	if n_idle==50: break
 	train_loss_epoch+=[0]; train_acc_epoch+=[0]
@@ -102,6 +138,7 @@ for epoch in range(max_epochs):
 	print('Epoch no: %d/%d\tTrain loss: %f\tTrain acc: %f\tVal loss: %f\tVal acc: %f'%(epoch, max_epochs, train_loss_epoch[-1], train_acc_epoch[-1],val_loss_epoch[-1],val_acc_epoch[-1]))
 	
 	#plot losses vs epoch
+	if not os.path.
 	plt.plot(train_loss_epoch,label='train')
 	plt.plot(val_loss_epoch,label='val')
 	plt.legend()
