@@ -15,5 +15,5 @@ Use the 'net' mode if audio is a mixture signal, else use 'voc' or 'pakh' for cl
 * [extract_features_labels.py](extract_features_labels.py) - to generate and save the log-mel-spectrograms and labels of each section's audio
 * [train.py](train.py) - the main training script <br><br>
 
-* [splits/](splits/) - contains the list of sections in each fold for all 3 cases - vocals, pakhawaj and net, in separate folders
+* [splits/](splits/) - contains the list of sections in each cross-validation fold for all 3 cases(vocals, pakhawaj and net), in separate folders
 * [saved_models/](saved_models/) - trained models from each fold for all 3 cases in separate folders
