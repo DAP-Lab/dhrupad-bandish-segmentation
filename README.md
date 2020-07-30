@@ -1,5 +1,9 @@
 # Dhrupad Vocal Bandish Segmentation
-This repository contains annotations of metric cycle (*tala*) boundaries and of surface tempo based structural segments of the *bandish* portions of a Dhrupad vocal concert dataset, and codes for automatic surface tempo multiple estimation and structural segmentation. The repository is linked to the following publications: </br> </br>
+This repository contains:
+* annotations of metric cycle (*tala*) boundaries and of surface tempo based structural segments of the *bandish* portions of a Dhrupad vocal concert dataset
+* codes for automatic surface tempo multiple estimation </br>
+
+It is linked to the following publications: </br> </br>
 ```
 Rohit M. A., Vinutha T. P., Preeti Rao. “Structural Segmentation of Dhrupad Vocal Bandish Audio 
 based on Tempo”, 21st International Society for Music Information Retrieval Conference,
