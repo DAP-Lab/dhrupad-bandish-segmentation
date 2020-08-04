@@ -12,8 +12,8 @@ Montréal, Canada, 2020
 </br>
 
 ```
-Rohit M. A., Preeti Rao. “Structural Segmentation of Dhrupad Vocal Bandish Audio 
-based on Tempo”, Unpublished technical report, 2020
+Rohit M. A., Preeti Rao. “Structure and Automatic Segmentation of Dhrupad 
+Vocal Bandish Audio”, Unpublished technical report, arXiv:2008.00756 [eess.AS], 2020
 ```
 
 The annotations were created manually by one of the authors in consultation with a musician. Trained models are made available to obtain predictions on any test audio. Training scripts are also provided to reproduce the results reported in the paper.
