@@ -19,8 +19,8 @@
             <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
           {% endif %}-->
 
-          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-          <h2 id="project_tagline">Accompanying Webpage</h2>
+          <h1 id="project_title">Structural Segmentation of Dhrupad Vocal Bandish Audio</h1>
+          <h2 id="project_tagline">Supplementary material for poster presentation at ISMIR 2020</h2>
 
           {% if site.show_downloads %}
             <section id="downloads">
@@ -34,19 +34,21 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p> This page has some example audios and unpublished supplementary material </p>
-        <figure>
-          <figcaption>Listen to the T-Rex:</figcaption>
-          <audio
-          controls
-          src="https://raw.githubusercontent.com/DAP-Lab/dhrupad-bandish-segmentation/master/audio_samples/GB_AhirBhrv_Choutal_a.wav">
-            Your browser does not support the
-            <code>audio</code> element.
-          </audio>
-        </figure>
-        
+        <div id="" class="contents-list">
+          <h2>Contents<h2>
+          <ul>
+            <li><a href="#section_descriptions">Musical description of the bandish sections</a>
+            <li><a href="#choutal_theka_variants">Changing rhythmic density within the theka</a>
+            <li><a href="#audio_example_tempi">Example audio from a section in a concert</a>
+            <li><a href="#tempo-cnn">Related Work – <i>tempo-cnn</i></a>
+            <li><a href="#stm-cnn">Proposed Model for s.t.m. Estimation</a>
+            <li><a href="#conf_mats">Confusion matrices for s.t.m. prediction</a>
+            </ul>
+        </div>
+        <br><br><br>
+
         <div id="" class="section_content">
-          <h2 id="">Musical description of the bandish sections</h2>
+          <h2 id="section_descriptions">Musical description of the bandish sections</h2>
           <figure>
             <img src="media/section_descriptions.png"
             alt="A table describing each section in a bandish">
@@ -55,7 +57,7 @@
         <br><br><br>
 
         <div id="" class="section_content">
-          <h2 id="">Changing rhythmic density within the theka</h2>
+          <h2 id="choutal_theka_variants">Changing rhythmic density within the theka</h2>
           <figure>
             <img src="media/choutal_theka_variants.png"
             alt="">
@@ -67,7 +69,7 @@
         <br><br><br>
 
         <div id="" class="section_content">
-          <h2 id="">Example audio from a section in a concert</h2>
+          <h2 id="audio_example_tempi">Example audio from a section in a concert</h2>
           <figure>
             <img src="media/audio_example_tempi.png"
             alt="">
@@ -76,7 +78,7 @@
           <figcaption>Mixture</figcaption>
           <audio
           controls
-          src="https://raw.githubusercontent.com/DAP-Lab/dhrupad-bandish-segmentation/gh-pages/media/audio_example_tempi_mix.wav">
+          src="media/audio_example_tempi_mix.wav">
             Your browser does not support the
             <code>audio</code> element.
           </audio>
@@ -86,7 +88,7 @@
           <figcaption>Vocals</figcaption>
           <audio
           controls
-          src="https://raw.githubusercontent.com/DAP-Lab/dhrupad-bandish-segmentation/gh-pages/media/audio_example_tempi_voc.wav">
+          src="media/audio_example_tempi_voc.wav">
             Your browser does not support the
             <code>audio</code> element.
           </audio>
@@ -96,7 +98,7 @@
           <figcaption>Pakhawaj</figcaption>
           <audio
           controls
-          src="https://raw.githubusercontent.com/DAP-Lab/dhrupad-bandish-segmentation/gh-pages/media/audio_example_tempi_pakh.wav">
+          src="media/audio_example_tempi_pakh.wav">
             Your browser does not support the
             <code>audio</code> element.
           </audio>
@@ -107,7 +109,7 @@
         <br><br><br>
         
         <div id="" class="section_content">
-          <h2 id="">Related Work – <i>tempo-cnn</i></h2>
+          <h2 id="tempo-cnn">Related Work – <i>tempo-cnn</i></h2>
           <figure>
             <img src="media/tempo-cnn.png"
             alt="">
@@ -116,7 +118,7 @@
         <br><br><br>
   
         <div id="" class="section_content">
-          <h2 id="">Proposed Model for s.t.m. Estimation</h2>
+          <h2 id="stm-cnn">Proposed Model for s.t.m. Estimation</h2>
           <figure>
             <img src="media/stm-cnn.png"
             alt="">
@@ -125,7 +127,7 @@
         <br><br><br>
       
         <div id="" class="section_content">
-          <h2 id="">Confusion matrices for s.t.m. prediction</h2>
+          <h2 id="conf_mats">Confusion matrices for s.t.m. prediction</h2>
           <figure>
             <img src="media/conf_mats.png"
             alt="">
