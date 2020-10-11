@@ -1,4 +1,11 @@
-## Welcome to GitHub Pages
+## Welcome to the accompanying webpage!
+
+This page has some audio examples.
+
+<script>
+var audio = new Audio("https://raw.githubusercontent.com/DAP-Lab/dhrupad-bandish-segmentation/blob/master/audio_samples/GB_AhirBhrv_Choutal_a.wav")
+audio.play()
+</script>
 
 You can use the [editor on GitHub](https://github.com/DAP-Lab/dhrupad-bandish-segmentation/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
