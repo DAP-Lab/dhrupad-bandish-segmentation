@@ -37,40 +37,15 @@
         <div id="contents_list" class="contents-list">
           <h2>Contents<h2>
           <ul>
-            <li><a href="#section_descriptions"><h3 style="color:blue">Musical description of the bandish sections</h3></a>
-            <li><a href="#choutal_theka_variants"><h3 style="color:blue">Changing rhythmic density within the theka</h3></a>
             <li><a href="#audio_example_tempi"><h3 style="color:blue">Example audio from a section in a concert</h3></a>
             <li><a href="#stm_examples"><h3 style="color:blue">Examples of different surface tempo multiples</h3></a>
-            <li><a href="#tempo-cnn"><h3 style="color:blue">Related Work – <i>tempo-cnn</i></h3></a>
-            <li><a href="#stm-cnn"><h3 style="color:blue">Proposed Model for s.t.m. Estimation</h3></a>
-            <li><a href="#conf_mats"><h3 style="color:blue">Confusion matrices for s.t.m. prediction</h3></a>
+            <li><a href="#section_descriptions"><h3 style="color:blue">Musical description of the bandish sections</h3></a>
+            <li><a href="#choutal_theka_variants"><h3 style="color:blue">Changing rhythmic density within the theka</h3></a>
+            <!-- <li><a href="#tempo-cnn"><h3 style="color:blue">Related Work – <i>tempo-cnn</i></h3></a> -->
+            <!-- <li><a href="#stm-cnn"><h3 style="color:blue">Proposed Model for s.t.m. Estimation</h3></a> -->
+            <!-- <li><a href="#conf_mats"><h3 style="color:blue">Confusion matrices for s.t.m. prediction</h3></a> -->
             </ul>
         </div>
-        <br><br><br>
-
-        <div id="" class="section_content">
-          <h2 id="section_descriptions">Musical description of the bandish sections</h2>
-          <figure>
-            <img src="media/section_descriptions.png"
-            alt="A table describing each section in a bandish">
-          </figure>
-        </div>
-        <br>
-        (<a href="#contents_list">top</a>)
-        <br><br><br>
-
-        <div id="" class="section_content">
-          <h2 id="choutal_theka_variants">Changing rhythmic density within the theka</h2>
-          <figure>
-            <img src="media/choutal_theka_variants.png"
-            alt="">
-            <figcaption align="left"> The theka of Choutal, a 12 matra cycle with 6 sub-divisions of 2 matras each.
-            (a) Its basic form with 1 stroke per matra for the most part except on the last 4 matras,
-            where it is 2 per matra. (b) A variation with 4 strokes on each of the last two matras. </figcaption>
-          </figure>
-        </div>
-        <br>
-        (<a href="#contents_list">top</a>)
         <br><br><br>
 
         <div id="" class="section_content">
@@ -122,6 +97,9 @@
           <h2 id="stm_examples">Examples of different surface tempo multiples</h2>
           <p>Audio source: <a href="https://musicbrainz.org/recording/178b4cf6-88e6-414d-bfbd-3d90bb368a9a">https://musicbrainz.org/recording/178b4cf6-88e6-414d-bfbd-3d90bb368a9a</a> </P
           <p>(Frequency in Hz on y-axis and time in seconds on x-axis)</p>
+          <p> The dotted box (in white) of width 2.5s is shown to highlight the differences in onset densities. The inset in (d) of width 1s highlights the 
+          distinct nature of vocalisation at s.t.m 8. The m.t. in all the examples is between 50 and 60 BPM, so in each case, 
+          the number of strokes / syllables we expect to see within the rectangle is roughly equal to twice the s.t.m. value. </p>
           <br>
           <div class="row">
             <div class="column">
@@ -199,6 +177,49 @@
         (<a href="#contents_list">top</a>)
         <br><br><br>           
 
+        <div id="" class="section_content">
+          <h2 id="section_descriptions">Musical description of the bandish sections</h2>
+          <figure>
+            <img src="media/section_descriptions.png"
+            alt="A table describing each section in a bandish">
+          </figure>
+        </div>
+        <br>
+        (<a href="#contents_list">top</a>)
+        <br><br><br>
+
+        <div id="" class="section_content">
+          <h2 id="model_variants">Some other model architectures</h2>
+          <figure>
+            <img src="media/model_variants.png"
+            <figurecaption>[1] Schreiber et al, "A Single-Step Approach to Musical Tempo Estimation Using a Convolutional Neural Network", ISMIR 2018 </figurecaption>
+          </figure>
+          <figure>
+            <img src="media/model_variants_results.png"
+             <figurecaption> (a) - (g) Training (in blue) and validation (in orange) loss curves for the different
+              architecture variations (inset: the last 70 epochs). (h) Training and validation accuracies
+              at the minimum validation loss for each model. </figurecaption>
+          </figure>
+
+        </div>
+        <br>
+        (<a href="#contents_list">top</a>)
+        <br><br><br>
+
+<!--
+        <div id="" class="section_content">
+          <h2 id="choutal_theka_variants">Changing rhythmic density within the theka</h2>
+          <figure>
+            <img src="media/choutal_theka_variants.png"
+            alt="">
+            <figcaption align="left"> The theka of Choutal, a 12 matra cycle with 6 sub-divisions of 2 matras each.
+            (a) Its basic form with 1 stroke per matra for the most part except on the last 4 matras,
+            where it is 2 per matra. (b) A variation with 4 strokes on each of the last two matras. </figcaption>
+          </figure>
+        </div>
+        <br>
+        (<a href="#contents_list">top</a>)
+        <br><br><br>
           
         <div id="" class="section_content">
           <h2 id="tempo-cnn">Related Work – <i>tempo-cnn</i></h2>
@@ -232,7 +253,7 @@
         <br>
         (<a href="#contents_list">top</a>)
         <br><br><br>
-          
+-->          
       </section>
     </div>
       
