@@ -2,6 +2,7 @@
 
 ### Requirements
 * Install the packages in [requirements.txt](requirements.txt)
+* To perform source separation of concert audios into vocal and pakhawaj, we used 2-stems model from [Spleeter](https://github.com/deezer/spleeter), which is a "source separation library with pretrained models written in Python and uses Tensorflow".
 
 ### Usage
 * Download and extract the contents of the repository
