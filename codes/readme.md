@@ -6,13 +6,17 @@
 ### Usage
 * Download and extract the contents of the repository
 * Change directory to dhrupad-bandish-segmentation/codes
-* To obtain surface tempo multiple estimates on a test audio, run:<br>
-```python3 get_stm.py /path/to/audio.wav <mode>``` </br>
+* To obtain surface tempo multiple estimates on a test audio, run:  
+
+```python3 get_stm.py /path/to/audio.wav <mode>```  
 where ```<mode>``` is one of ```net```, ```voc```, ```pakh```, indicating the source for s.t.m. estimation. <br>
 
 Use the ```net``` mode if audio is a mixture signal, else use ```voc``` or ```pakh``` for clean/source-separated vocals or pakhawaj tracks. The s.t.m. output is smoothed across the audio duration and is saved as a plot in ```./plots``` (output directory can be changed in ```params.py```).
 
-* See [train_readme.md](train_readme.md) for instructions on reproducing the cross-validation results reported in the paper.
+* See [train_readme.md](train_readme.md) for instructions on reproducing the cross-validation results reported in the paper.  
+
+* To obtain metric tempo estimates on a query audio, run:  
+``` Code to appear soon!```
 
 ### Contents
 * [get_stm.py](get_stm.py) - to predict s.t.m. values on a test audio
