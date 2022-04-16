@@ -1,6 +1,11 @@
 ## Readme
 
+### Requirements
+* Install the packages in [requirements.txt](requirements.txt)
+
 ### Usage
+* Download and extract the contents of the repository
+* Change directory to dhrupad-bandish-segmentation/codes
 * To obtain surface tempo multiple estimates on a test audio, run:<br>
 ```python3 get_stm.py /path/to/audio.wav <mode>``` </br>
 where ```<mode>``` is one of ```net```, ```voc```, ```pakh```, indicating the source for s.t.m. estimation. <br>
